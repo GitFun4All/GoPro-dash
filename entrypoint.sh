@@ -59,6 +59,8 @@ echo "Checking files"
 if [ `epfilecount` -ne 1 ]; then 
 	echo "Multiple video files found, joining them"
 	# do a join
+	echo "Not implemented yet... (sorry)."
+	exit 1
 fi
 
 if [ `epfilecount` -ne `epfilecount '*.[gG][pP][xX]'` ]
