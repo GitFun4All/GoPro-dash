@@ -31,15 +31,20 @@ auto)
 		echo "Not implemented yet... (sorry)."
 		exit 1
 	fi
+
+	if [ `epfilecount` -eq 0 ]; then
+		echo "No files found in the videos folder?!"
+		exit 1
+	fi
 	
 	if [ `epfilecount` -ne `epfilecount '*.[gG][pP][xX]'` ]; then
-		echo "Extracting GPX data"
-		for vfile in `ls /videos/*.[mM][pP]4`
+		echo "Extracting GPX data from video"
+		for vfile in `ls /videos/*.[mM][pP]4 2> /dev/null`
 		do
 			gopro-to-gpx.py "${vfile}" /videos/$(basename $vfile .MP4).GPX
 		done
 	else
-		echo "Creating overlay with GPX file"
+		echo "Creating overlay from GPX file"
 		cd /videos
 		for vfile in *.[mM][pP]4
 		do
@@ -73,4 +78,4 @@ auto)
 esac
 
 echo "All done - thanks mainly to github: time4tea/gopro-dashboard-overlay!"
-exit 
+exit
