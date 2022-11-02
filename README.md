@@ -12,7 +12,7 @@ To use these files, clone the repository copy a GoPro MP4 video
 to the videos directory and then run the following:
 
 ```html
-<clipboard-copy >Copy</clipboard-copy>
+<clipboard-copy> docker compose build </clipboard-copy>
 ```
 
 docker compose build 
