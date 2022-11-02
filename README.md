@@ -1,2 +1,2 @@
 # GoPro-dash
-Docker resources for GoPro-overlay-dashboard
+Docker resources for the excellent GoPro-overlay-dashboard.py
