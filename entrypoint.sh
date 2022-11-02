@@ -19,7 +19,12 @@ gopro-rename.py
 gopro-to-csv.py
 gopro-to-gpx.py"
 echo ""
-echo "Place a video file in the video folder and run with docker-compose up overlay for the default settings"
+echo "Place a video file in the video folder and run with:
+
+docker compose run --rm goprovo auto
+
+for the default settings"
+echo ""
 echo "Which will run the example:
 gopro-dashboard.py --gpx video.gpx(created if not found) video.MP4 video-dashboard.MP4"
 
