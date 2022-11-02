@@ -12,6 +12,4 @@ docker compose run --rm goprovo auto
 Make some tea, wait for gopro-overlay to do the magic. When complete
 you should find a new file alongside your original with {filename}-OV.MP4.
 
-This is provided as is!!! P
-
-* Please don't put your only copy of any videos here without a backup! *
+WARNING: Provided as is, no liability implied, use at your own risk!
