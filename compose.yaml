@@ -1,0 +1,15 @@
+services:
+  goprovo:
+    entrypoint: /entrypoint.sh
+    command: "$$@"
+    image: gopro-overlay:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: "no"
+    volumes:
+    - type: bind
+      source: ./videos
+      target: /videos
+    tty: yes
+
