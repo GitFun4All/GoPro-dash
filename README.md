@@ -22,11 +22,11 @@ you should find a new file alongside your original with {filename}-OV.MP4.
 
 other things to try:
 ```
-docker compose run --rm help 
+docker compose run --rm goprovo help 
 ```
 to see why something went wrong:
 ```
-docker compose run --rm bash
+docker compose run --rm goprovo bash
 ```
 
 WARNING: Provided as is, no liability implied, use at your own risk!
