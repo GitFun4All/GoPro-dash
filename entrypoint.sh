@@ -73,9 +73,8 @@ auto)
   	echo ""
   	echo "This will run the example"
 	echo "gopro-dashboard.py --gpx video.gpx (created if not found) video.MP4 video-dashboard.MP4"
-	echo "" 
+	echo "" && sleep 3
   	exit 1;;
 esac
-
 echo "All done - thanks mainly to github: time4tea/gopro-dashboard-overlay!"
-exit
+
