@@ -1,4 +1,4 @@
-##GoPro Video File (MP4)
+GoPro Video File (MP4)
 
   
 Put a single GoPro video MP4 file here to add the overlays to or a video file and corrosponding GPX file if available.
