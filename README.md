@@ -3,13 +3,12 @@ Docker resources for the excellent GoPro-overlay-dashboard.py
 
 
 Prerequsites: 
-
+------------------------------------------------------------------------------
 
 Working Docker installation or DockerDesktop.
 
-
 All filenames in videos directory must be uppercase (including extensions!!!)
-
+------------------------------------------------------------------------------
 
 To use these files, clone the repository copy a GoPro MP4 video
 to the videos directory and then run the following:
