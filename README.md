@@ -22,12 +22,13 @@ Make some tea, wait for gopro-overlay to do the magic. When complete
 you should find a new file alongside your original with {filename}-OV.MP4.
 
 other things to try:
-
-docker compose run --rm help (Provide details of included apps)
-
+```
+docker compose run --rm help 
+```
 to see why something went wrong:
-
+```
 docker compose run --rm bash
+```
 
 WARNING: Provided as is, no liability implied, use at your own risk!
 
