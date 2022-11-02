@@ -8,7 +8,7 @@ All filenames in the videos directory must be uppercase (including extensions!)
 -------------------------------------------------------------------------------
 
 
-To use these files, clone the repository copy a GoPro MP4 video
+To use these files, clone the repository and copy a GoPro MP4 file
 to the videos directory and then run the following:
 
 ```
