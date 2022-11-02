@@ -2,7 +2,7 @@
 Docker resources for the excellent GoPro-overlay-dashboard.py
 
 
-##Prerequsites: 
+## Prerequsites: 
 -------------------------------------------------------------------------------
 All filenames in the videos directory must be uppercase (including extensions!)
 -------------------------------------------------------------------------------
