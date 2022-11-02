@@ -56,7 +56,7 @@ epfilecount()
 }
 
 echo "Checking files"
-if [ `epfilecount` -ne 1 ]; then 
+if [ `epfilecount` -gt 1 ]; then 
 	echo "Multiple video files found, joining them"
 	# do a join
 	echo "Not implemented yet... (sorry)."
