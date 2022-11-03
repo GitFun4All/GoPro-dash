@@ -42,6 +42,8 @@ auto)
 		for vfile in `ls /videos/*.[mM][pP]4 2> /dev/null`
 		do
 			gopro-to-gpx.py "${vfile}" /videos/$(basename $vfile .MP4).GPX
+			echo "Creating video overlay"
+			gopro-dashboard.py --gpx $(basename $vfile .MP4).GPX $vfile $(basename $vfile .MP4)-OV.MP4
 		done
 	else
 		echo "Creating overlay from GPX file"
