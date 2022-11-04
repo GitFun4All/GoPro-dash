@@ -1,0 +1,26 @@
+FROM alpine:latest
+
+MAINTAINER hotpot_sculler0p@icloud.com
+
+ENV PATH=$PATH:/usr/bin
+
+RUN apk update && apk add bash linux-headers python3 python3-dev py3-pip curl unzip font-noto ffmpeg \
+    fribidi-dev harfbuzz-utils harfbuzz-dev meson git \
+    tiff-dev jpeg-dev openjpeg-dev musl-dev zlib-dev freetype-dev lcms2-dev gcc \
+    libwebp-dev tcl-dev tk-dev harfbuzz-dev fribidi-dev libimagequant-dev \
+    libxcb-dev libpng-dev && \
+    cd /tmp && curl "https://fonts.google.com/download?family=Roboto" -o Roboto.zip && \
+    git clone "https://github.com/HOST-Oman/libraqm.git" && \
+    cd libraqm && meson build && ninja -C build && ninja -C build install && \
+    python3 -m pip install --upgrade pip && \
+    python3 -m pip install --upgrade Pillow && \
+    mkdir /usr/share/fonts/Roboto && cd /usr/share/fonts/Roboto && \
+    unzip /tmp/Roboto.zip && fc-cache -fv && mkdir /videos && cd /
+
+RUN pip install gopro-overlay
+
+WORKDIR /videos
+
+COPY entrypoint.sh /
+
+CMD [ "/entrypoint.sh", "$@" ]
