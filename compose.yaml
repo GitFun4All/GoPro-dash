@@ -1,5 +1,5 @@
 services:
-  goprovo:
+  gopro-dash:
     entrypoint: /entrypoint.sh
     command: "$$@"
     image: gopro-overlay:latest
