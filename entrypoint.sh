@@ -1,7 +1,7 @@
 #!/bin/sh
 # ----------------------------------------------------------------------------
-# Version 	:	0.2
-# Author	:	chazatlarge@gmail.com
+# Version 	:	0.3
+# Author	:	hotpot_sculler0p@icloud.com
 # ----------------------------------------------------------------------------
 
 epfilecount()
@@ -71,7 +71,7 @@ auto)
 	echo ""
 	echo "Place a video file in the video folder and run with"
 	echo ""
-	echo "docker compose run --rm goprovo auto"
+	echo "docker run --rm gitfun4all/gorpo-dash auto"
   	echo ""
   	echo "This will run the example"
 	echo "gopro-dashboard.py --gpx video.gpx (created if not found) video.MP4 video-dashboard.MP4"
