@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-MAINTAINER chazatlarge@gmail.com
+MAINTAINER hotpot_sculler0p@icloud.com
 
 ENV PATH=$PATH:/usr/bin
 
