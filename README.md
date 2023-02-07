@@ -1,6 +1,7 @@
 # GoPro-dash
 
-This has been superseded by the original project - please go here https://github.com/time4tea/gopro-dashboard-overlay
+# This has been superseded by the original project - please go here #
+https://github.com/time4tea/gopro-dashboard-overlay
 
 
 Docker resources for the excellent GoPro-overlay-dashboard.py
